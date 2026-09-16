@@ -1,7 +1,42 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #222222;
+    background-color: #eef8ff;
+    color: #172b4d;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0077ff, #00bfff);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #005fcc;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9efff;
 }
