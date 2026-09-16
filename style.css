@@ -26,6 +26,57 @@ header p {
 /* Navigation */
 nav {
     background-color: #005fcc;
+
+    /* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #0099ff;
+    box-shadow: 0 4px 12px rgba(0, 119, 255, 0.10);
+}
+
+/* Main headings */
+h2 {
+    color: #0066cc;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* Smaller headings */
+h3 {
+    color: #008fd6;
+    font-size: 21px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Lists */
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #006fd6;
+}
+
+a:hover {
+    color: #00aaff;
+}
     text-align: center;
     padding: 14px;
 }
