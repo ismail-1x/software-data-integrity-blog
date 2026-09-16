@@ -8,36 +8,50 @@
 <body>
 
     <header>
+
         <h1>Software and Data Integrity Failures</h1>
+
         <p>Educational Web-Security Blog</p>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
         </nav>
+
     </header>
 
 
     <main>
 
         <section>
+
             <h2>Software and Data Integrity Failures:</h2>
 
             <p>
                 Integrity stays a part of CIA Triad that assure trustworthiness in the cyber world yet its complexity and risk of loosing it keeps evolving. Sometimes From even human mistakes and blind trust in elements for example third party applications or external libraries and dependencies that makes actors trust this code to be correct both now and, in the future, but some cases it wont be.
             </p>
+
         </section>
 
 
         <section>
+
             <h2>So what is Software and data integrity?</h2>
 
             <p>
-                this term we are going to separate it into 2 parts:
+                This term we are going to separate it into 2 parts:
             </p>
 
+            <h3>Software integrity</h3>
+
             <p>
-                Software integrity: it means the quality of the software’s source code and its essential to measure of how safe secure and reliable it is. We need to measure the maintainability and testability of the code so it’s comfort to the standards. As for concerns to data integrity: the property that data has not been altered, destroyed or lost in unauthorized manner. This assurance must hold true while data is either at rest in transit or actively in use.
+                It means the quality of the software’s source code and its essential to measure of how safe secure and reliable it is. We need to measure the maintainability and testability of the code so it’s comfort to the standards. 
+            </p>
+
+            <h3>Data integrity</h3>
+
+            <p>
+                The property that data has not been altered, destroyed or lost in unauthorized manner. This assurance must hold true while data is either at rest in transit or actively in use.
             </p>
 
             <p>
@@ -49,10 +63,286 @@
             <p>
                 It compromises emails financial ledgers and reach to employees or customer information, this means businesses lose revenue and operational control.
             </p>
+
         </section>
 
 
+        <section>
+
+            <h2>HOW INTEGRITY FAILURES HAPPEN?</h2>
+
+            <img src="images/integrity-failures.png"
+                 alt="HOW INTEGRITY FAILURES HAPPEN diagram">
+
+            <p>
+                SOURCE: <a href="#">https://www.ionix.io/guides/owasp-top-10/software-and-data-integrity-failures/</a>
+            </p>
+
+            <p>
+                Many teams in developing phase of any project assume that internal or third-party systems are secured by default which is far from the truth. Developers build systems that are automated which manual verification difficult. This key problem is trust without verification
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Real-World Case Studies:</h2>
+
+
+            <article>
+
+                <h3>The SolarWinds Attacks: (year 2020)</h3>
+
+                <p>
+                    The SolarWinds build system got compromised and attackers added backdoor to a legitimate software update.
+                </p>
+
+                <p>
+                    More than 18000 organizations downloaded the malicious update allowing attackers deep access into internal systems for months.
+                </p>
+
+                <p>
+                    SolarWinds partnered with CrowdStrike and KPMG to conduct a forensic cleanup and they had to build their assembly environment from scratch using a triple build architecture.
+                </p>
+
+                <p>
+                    Source: <a href="#">https://www.fortinet.com/uk/resources/cyberglossary/solarwinds-cyber-attack</a>
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Event-Stream npm Package: year 2018</h3>
+
+                <p>
+                    A malicious contributor added code to the popular event-stream npm package that targeted cryptocurrency wallets. Which impacted thousand of Node.js application.
+                </p>
+
+                <p>
+                    The security team at npm immediately triaged the alert, permanently removed the malicious package from the public 
+                </p>
+
+                <p>
+                    Source: <a href="#">https://blog.npmjs.org/post/180565383195/details-about-the-event-stream-incident</a>
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Codecov Bash Uploader Breach: year 2021</h3>
+
+                <p>
+                    Attackers modified Codecov’s Bash uploader Script used in CI pipelines to leak environment variables containing credentials and tokens. A customer manually calculated and cross referenced the SHA checksum of the reference hansh and codecov’s github documentation.
+                </p>
+
+                <p>
+                    they re secured their asset pipelines and legally advised impacted enterprises to immediately cycle all environment secrets
+                </p>
+
+                <p>
+                    Source: <a href="#">https://about.codecov.io/apr-2021-post-mortem/</a>
+                </p>
+
+            </article>
+
+        </section>
+
+
+    
+        <section>
+
+            <h2>PREVENTION &amp; MITIGATION</h2>
+
+            <p>
+                Source: <a href="#">https://signmycode.com/blog/what-are-software-and-data-integrity-failures-how-to-prevent/</a>
+            </p>
+
+
+            <h3>1- Use multi-factor Authentication MFA</h3>
+
+            <p>
+                Self explanatory the attackers if there is a breach would have one or more barriers to breach to grant them access to the system
+            </p>
+
+
+            <h3>2- Make sure you are using Code signing certificates</h3>
+
+            <p>
+                This like stamp of approval which ensure that the software cones from a trusted source basically digitally signing the code and provide a unique signature that verifies the authenticity of the software’s creator
+            </p>
+
+
+            <h3>3- Monitor for updates and security patches</h3>
+
+            <p>
+                Regularly monitor these updates and security patches to address potential vulnerabilities check for any bug fixes new features 
+            </p>
+
+
+            <h3>4- Enforce Secure Code Reviews</h3>
+
+            <p>
+                It involves a thorough examination of each software component to identify the cyber threats that could compromise the application (CIA)
+            </p>
+
+
+            <h3>Implement a Software Supply Chain Security Program</h3>
+
+            <p>
+                Like OWASP CYCLONE DX OPEN VAS OPEN IAM they help find and mitigate vulnerabilities associated with open-source libraries framework or third-party software
+            </p>
+
+
+            <h3>5-Enforce CI/CD Pipeline Segregation &amp; Access Control</h3>
+
+            <p>
+                A well-structured CI/CD pipeline ensures the code undergoes thorough testing and validation before being deployed into production it involves breaking down the development and deployment process into smaller manageable steps each with its own checks.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>CURRENT EVIDENCE &amp; TRENDS</h2>
+
+            <p>
+                In the architectural mapping, A08: Software and Data Integrity Failures holds a permanent position as a core systemic risk.
+            </p>
+
+            <p>
+                OWASP split and expanded the overarching umbrella of code ecosystem risks. While A06 (Vulnerable and Outdated Components) focuses strictly on administrative neglect and unpatched legacy libraries, A03: Software Supply Chain Failures was established to address upstream infrastructure compromises.
+            </p>
+
+            <p>
+                The Distinction: This structural shift highlights that modern engineering teams face two separate problems: using known buggy software vs. attackers actively altering authentic code inside pipelines, registries, and updates to violate trust boundaries.
+            </p>
+
+
+            <h3>Score table</h3>
+
+            <table>
+
+                <tr>
+                    <th>CWEs Mapped</th>
+                    <th>Max Incidence Rate</th>
+                    <th>Avg Incidence Rate</th>
+                    <th>Max Coverage</th>
+                    <th>Avg Coverage</th>
+                    <th>Avg Weighted Exploit</th>
+                    <th>Avg Weighted Impact</th>
+                    <th>Total Occurrences</th>
+                    <th>Total CVEs</th>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>8.98%</td>
+                    <td>2.75%</td>
+                    <td>78.52%</td>
+                    <td>45.49%</td>
+                    <td>7.11</td>
+                    <td>4.79</td>
+                    <td>501,327</td>
+                    <td>3,331</td>
+                </tr>
+
+            </table>
+
+
+            <p>
+                Source: <a href="#">https://top10.owasp.org/2025/A08_2025-Software_or_Data_Integrity_Failures/</a>
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Demonstration: Configuration Integrity Check</h2>
+
+            <p>
+                If software blindly trusts a modified configuration, it could make an unsafe decision.
+            </p>
+
+            <p>
+                The file can still be readable and syntactically correct while no longer being trustworthy.
+            </p>
+
+
+            <h3>Vulnerable Application</h3>
+
+
+            <h3>Safety Note</h3>
+
+            <p>
+                Safety note: This demonstration is a local simulation using fictional configuration data. It does not connect to real systems, access credentials, attack external infrastructure, or modify third-party software. The purpose is to demonstrate the defensive concept of integrity verification.
+            </p>
+
+        </section>
+
+
+
+
+        <section>
+
+            <h2>Conclusion</h2>
+
+            <p>
+                CONCLUSION HERE
+            </p>
+
+        </section>
+
+
+    
+
+        <section>
+
+            <h2>Sources</h2>
+
+            <p>
+                SOURCE 1 HERE
+            </p>
+
+            <p>
+                SOURCE 2 HERE
+            </p>
+
+            <p>
+                SOURCE 3 HERE
+            </p>
+
+        </section>
+
+
+       
+
+        <section>
+
+            <h2>AI Declaration</h2>
+
+            <p>
+                AI Used to give skeleton For my project
+            </p>
+
+        </section>
+
     </main>
+
+
+    <footer>
+
+        <p>
+            Software and Data Integrity Failures — Educational Web-Security Blog
+        </p>
+
+    </footer>
 
 </body>
 
