@@ -15,15 +15,16 @@ header {
     align-items: center;
 }
 
+nav {
+    position: static;
+}
+
 header h1 {
     margin: 0;
     font-size: 28px;
     font-weight: normal;
 }
 
-header p {
-    display: none;
-}
 
 /* Navigation */
 
